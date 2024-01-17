@@ -33,13 +33,13 @@ class Paths {
 
   Paths(
       {this.id,
-        this.title,
-        this.description,
-        this.order,
-        this.status,
-        this.createdAt,
-        this.updatedAt,
-        this.pathItems});
+      this.title,
+      this.description,
+      this.order,
+      this.status,
+      this.createdAt,
+      this.updatedAt,
+      this.pathItems});
 
   Paths.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -85,13 +85,13 @@ class PathItems {
 
   PathItems(
       {this.id,
-        this.pathId,
-        this.title,
-        this.description,
-        this.order,
-        this.status,
-        this.createdAt,
-        this.updatedAt});
+      this.pathId,
+      this.title,
+      this.description,
+      this.order,
+      this.status,
+      this.createdAt,
+      this.updatedAt});
 
   PathItems.fromJson(Map<String, dynamic> json) {
     id = json['id'];

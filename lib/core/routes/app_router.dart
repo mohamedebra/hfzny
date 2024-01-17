@@ -12,9 +12,8 @@ import '../../feature/onborading/ui/splash.dart';
 import '../../feature/path/data/model/model.dart';
 import '../../feature/path/data/repo/repo_path.dart';
 import '../../feature/path/logic/path_cubit.dart';
-import '../../feature/path/ui/tab1.dart';
+import '../../feature/path/ui/path.dart';
 import '../DI/dependency_injection.dart';
-import '../networks/api_get_path.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -41,12 +40,6 @@ class AppRouter {
 
       case Routes.splashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
-      // case Routes.tabTwo:
-      //
-      //   return MaterialPageRoute(builder: (_) => BlocProvider(
-      //       create: (context) => PathCubit(PathRepo(UserService())),
-      //       child: const TabTwo(tabBaModel: _ as TabBaModel,)));
-
 
       case Routes.tabOne:
 

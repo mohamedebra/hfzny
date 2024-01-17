@@ -6,8 +6,6 @@ import 'package:untitled2/core/networks/api_service.dart';
 import 'package:untitled2/feature/path/data/model/model.dart';
 import 'package:untitled2/feature/path/data/repo/repo_path.dart';
 
-import '../../../core/networks/api_get_path.dart';
-
 part 'path_state.dart';
 
 class PathCubit extends Cubit<PathState> {
@@ -39,12 +37,5 @@ class PathCubit extends Cubit<PathState> {
     }
     }
 
-    void nextPath(){
-
-      currentItems= tabBaModel.paths![currentIndex].pathItems![currentIndex] as List<PathItems>?;
-      currentIndex ++;
-      emit(NextState());
-
-    }
 
 }
