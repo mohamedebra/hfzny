@@ -299,7 +299,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             keyboardType: TextInputType.visiblePassword,
                             controller:
                             context.read<RegisterCubit>().controllerpasswordvalid,
-                            obscureText: isObscureText,
+                            obscureText: isObscureText1,
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return "Please enter a valid password";

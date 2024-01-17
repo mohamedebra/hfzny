@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -8,13 +7,8 @@ import 'package:untitled2/core/style/color.dart';
 import 'package:untitled2/core/style/style.dart';
 import 'package:untitled2/core/widgets/app_botton.dart';
 import 'package:untitled2/feature/path/logic/path_cubit.dart';
-import '../../../core/helper/chache_helper.dart';
-import '../../../core/networks/api_get_path.dart';
-import '../../../core/networks/api_service.dart';
 import '../../../core/widgets/error.dart';
-import '../../../core/widgets/loding.dart';
 import '../data/model/model.dart';
-import '../data/repo/repo_path.dart';
 
 
 class TabOne extends StatefulWidget {
@@ -37,7 +31,6 @@ class _TabOneState extends State<TabOne> {
 
   bool isLast = true;
   bool isList1 = true;
-  bool isList2 = true;
 
   @override
   Widget build(BuildContext context) {
@@ -262,7 +255,7 @@ class _TabOneState extends State<TabOne> {
                   errMessage: state.error,
                 );
               }
-              return Center(child: CircularProgressIndicator());
+              return const Center(child: CircularProgressIndicator());
             },
           ),
         ),
